@@ -102,3 +102,32 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# extras
+glove.42B.300d.txt
+annos/
+datasets/
+config.yaml
+faster_rcnn/*
+figures/*
+json_annos/*
+json_annos_old/*
+matlab_annos/*
+models/*
+VG/*
+VRD/*
+UnRel/*
+results/*
+*.bin
+*.h5
+*.json
+*.png
+*.jpg
+*.gif
+*.tif
+*.ipynb
+*.pkl
+*.mat
+*.npy
+.vscode
+train.sh
