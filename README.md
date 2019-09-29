@@ -48,6 +48,10 @@ python3 main.py --dataset=DATASET --task=TASK --model=MODEL
 ```
 See main.py for other input arguments.
 Also see config.py for choices on dataset and task arguments.
+Example:
+```
+python3 main.py --dataset=VG200 --task=predcls --model=atr_net
+```
 
 ## For further questions
 Open an issue!
