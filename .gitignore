@@ -129,5 +129,5 @@ results/*
 *.pkl
 *.mat
 *.npy
-.vscode
+.vscode/
 train.sh
