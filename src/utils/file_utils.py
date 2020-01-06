@@ -30,7 +30,7 @@ def load_annotations(mode, dataset, filter_duplicates=False,
     _mode = mode if mode in {'preddet', 'sggen'} else 'predcls'
     with open(PATHS['json_path'] + dataset + '_' + _mode + '.json') as fid:
         annotations = json.load(fid)
-    orig_img_names = set(os.listdir(ORIG_ANNOS_PATHS[dataset]))
+    orig_img_names = set(os.listdir(ORIG_IMAGES_PATH[dataset]))
     annotations = [
         {
             'filename': anno['filename'],
