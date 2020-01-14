@@ -31,6 +31,7 @@ class DatasetTransformer():
         self._faster_rcnn_path = config.paths['faster_rcnn_path']
         self._orig_annos_path = config.orig_annos_path
         self._orig_images_path = config.orig_img_path
+        assert os.path.exists(self._orig_images_path)
         base = config.paths['json_path'] + self._dataset
         self._preddet_json = base + '_preddet.json'
         self._predcls_json = base + '_predcls.json'
