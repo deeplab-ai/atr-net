@@ -2,6 +2,7 @@
 """Functions to transform annotations and create train/test dataset."""
 
 import os
+import sys
 
 from config import Config
 from src.dataset_tools.vg200_transformer_class import VG200Transformer
@@ -41,5 +42,12 @@ def main(datasets):
         TRANSFORMERS[dataset].transform()
     print('Done.')
 
+
 if __name__ == "__main__":
-    main(['VG80K', 'sVG', 'VrR-VG', 'VGVTE', 'VGMSDN', 'VG200', 'VRD'])
+    if any(sys.argv[1:]):
+        main(sys.argv[1:])
+    else:
+        main([
+            'VG80K', 'sVG', 'VrR-VG', 'VGVTE',
+            'VGMSDN', 'VG200', 'VRD'
+        ])
