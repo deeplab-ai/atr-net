@@ -8,7 +8,7 @@ from copy import deepcopy
 
 import numpy as np
 
-from config import PATHS
+from config import PATHS, ORIG_IMAGES_PATH
 
 
 def load_annotations(mode, dataset, filter_duplicates=False,
